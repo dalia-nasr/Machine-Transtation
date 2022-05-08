@@ -1,0 +1,41 @@
+﻿Deploy model on Heruko using AWS instance:
+
+
+1. Prepare the needed data for deploying:
+* Save the model with the h5 extension so we can load it
+* Save the English and french tokenizers each as a pickle file
+
+
+2. Prepare a python file that has a class that loads the model and tokenizers with a function that reads an input sentence and predicts the output  (model.py file)
+3. Use flask to define an API route that calls the defined class and then calls the predict function gives it the URL and predicts the output of the sentence given in the URL (app.py)
+4. Wrap the app in a docker container
+5. Add a docker file that defines the different steps we need to do to create the docker image (Dockerfile)
+6. Add a txt file where we list in it the used dependencies (requirements.txt)
+
+
+Deploy:
+To deploy we used the AWS instance to launch the Docker container remotely and push it on Heroku.
+1. Using putty we connect to our instance
+2. Clone the Github repository on the instance
+3. Install Heroku:
+* Sudo snap install –classic Heroku
+
+
+4. Install docker:
+* Sudo apt-get install
+* Sudo apt-install docker.io
+* Sudo systemctl start docker
+* Sudo systemctl enable docker
+
+
+5. Build and run the docker container using these commands:
+*  docker build -t translator/api-server -f Dockerfile .
+*  docker run -p8000 -it –rm translator/api-server
+
+
+6. Below are the steps to push our model on Heroku:
+* Heroku login -i
+* Heroku container : login
+* Heroku create
+* Heroku container: push web-app {given url from above command}
+* Heroku container: release web -a {name given above}

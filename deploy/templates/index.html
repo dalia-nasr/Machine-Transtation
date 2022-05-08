@@ -1,0 +1,27 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <form action="/Translate" method='post'>
+  <h2 id="h2">English to French Translator</h2>
+
+  <div id="mainDiv">
+    <div id="Translate">
+      <h2>English Sentence</h2>
+      <input type="text" id="sentence" name="sentence" >
+    </div>
+    <div id="Translate">
+      <h2 id="h2">French Result</h2>
+      <input type="text" id="sentence" name="sentence" value = "{{ result }}">
+    </div>
+  </div> 
+
+  <div id="btnDiv">
+    <input type="submit" value="Translate" id="btn">
+  </div>
+
+</form>
+</body>
+</html>

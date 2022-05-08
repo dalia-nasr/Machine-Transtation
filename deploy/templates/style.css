@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(246, 246, 238);
+    color: blue;
+}
+
+h2{
+    border-bottom: 3px solid grey;
+    color: blue;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+}
+
+#Translate{
+    float: left;
+    border: 5px;
+    margin-left: 50px;
+    width: 500px;
+}
+
+#btn{
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #0000e6;
+    color: white;
+    cursor: pointer;
+}
+
+#sentence{
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+#mainDiv{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}
+
+#btnDiv{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
