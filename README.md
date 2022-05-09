@@ -13,7 +13,7 @@ Containerize the app using Docker. Add a docker file that defines the different 
 
 Deploy the Containerized app on Heroku using an AWS EC2 instance.
 
-<img src="https://user-images.githubusercontent.com/91887942/167412710-abe9bdc7-8f75-4b21-b937-f84bb4865f98.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/91887942/167418420-bc630656-1eae-40ad-a21d-1e133396f13a.png" width="400" height="200">
 
 This small project was done during the MLC training program with Zaka AI
 
