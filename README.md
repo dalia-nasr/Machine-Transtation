@@ -13,5 +13,3 @@ Deploy the Containerized app on Heroku using an AWS EC2 instance.
 <img src="https://user-images.githubusercontent.com/91887942/167418420-bc630656-1eae-40ad-a21d-1e133396f13a.png" width="400" height="200">
 
 This project was done during the MLC training program with Zaka AI
-
-https://education.zaka.ai/machine-learning-certification
